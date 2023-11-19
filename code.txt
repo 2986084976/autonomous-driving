@@ -1,0 +1,8 @@
+CUDA_VISIBLE_DEVICES=0,1 python main.py  --cfg cfgs/M2_track_kitti.yaml  --batch_size 64 --epoch 60 --preloading
+
+CUDA_VISIBLE_DEVICES=0,1 python main.py  --cfg cfgs/M2_Track_nuscene.yaml  --batch_size 64 --epoch 60 --preloading
+
+python main.py  --cfg cfgs/M2_track_kitti.yaml  --checkpoint /path/to/checkpoint/xxx.ckpt --test
+
+python main.py  --cfg cfgs/M2_Track_nuscene.yaml  --checkpoint /root/autodl-tmp/Open3DSOT/lightning_logs/version_35/checkpoints/epoch=5-step=15203.ckpt --test
+//35 22 18
